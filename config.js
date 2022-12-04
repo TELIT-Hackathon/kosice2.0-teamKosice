@@ -7,6 +7,6 @@ module.exports = {
         database:"nordix"
     },
     port:"80",
-    apiKey : "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",
+    apiKey : "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",
     fileId : "file-TocP72Zpgm7mETmriojhTC03",
 }

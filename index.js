@@ -95,6 +95,7 @@ async function RequestToAi(query, count) {
             console.log(Object.keys(result).length);
             return result
         }else{
+            console.log(data.data.error)
             return {}
         }
     }
@@ -114,7 +115,7 @@ app.post("/api/getData",function (req, res) {
         var query = `SELECT id, title, image, description FROM projects WHERE id in (${Object.keys(data).toString()});`;
         pool.query(query, 
             function(err, results) {
-                // console.log("results:",results); 
+                //console.log("results:",results); 
                 console.log("error:",err);
                 if(err == null){
                     results.map(element => {
