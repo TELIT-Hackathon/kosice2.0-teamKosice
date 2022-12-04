@@ -95,7 +95,13 @@ async function RequestToAi(query, count) {
             console.log(Object.keys(result).length);
             return result
         }else{
-            console.log(data.data.error)
+            if(data.error != undefined){
+                if(data.message != undefined)
+                    console.log(data.message)
+            }
+            else{
+                console.log(data.error)
+            }
             return {}
         }
     }
