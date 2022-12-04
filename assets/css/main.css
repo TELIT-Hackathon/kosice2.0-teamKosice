@@ -1,0 +1,19 @@
+.ata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.element-container {
+    display: flex;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 15px;
+    margin-block: 15px;
+}
+.element-img {
+    width: 200px;
+    height: 200px;
+}
+.element-title{
+    font-size: x-large;
+}
